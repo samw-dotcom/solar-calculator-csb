@@ -19,10 +19,14 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": [
-    "*.tsx",
-    "*.ts",
-    "components/*/.tsx",
-    "components/*/.ts",
-    "styles/*/.css"
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "components/**/*.ts",
+    "components/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build"
   ]
 }
