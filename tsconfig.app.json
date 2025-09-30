@@ -18,5 +18,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": [".tsx", "**/.ts", "*/.tsx"]
+  "include": ["*.tsx", "**/*.ts", "**/*.tsx"]
 }
