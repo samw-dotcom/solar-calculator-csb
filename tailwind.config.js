@@ -1,11 +1,12 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
+  darkMode: "class", // Enables dark mode with the `dark` class
   content: [
     "./index.html",
-    "./src/*/.{js,ts,jsx,tsx}",
-    "./components/*/.{js,ts,jsx,tsx}",
-    "./App.tsx",
-    "./main.tsx"
+    "./App.{js,ts,jsx,tsx}",
+    "./main.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./styles/**/*.{js,ts,jsx,tsx,css}",
   ],
   theme: {
     extend: {
@@ -52,14 +53,4 @@ export default {
     },
   },
   plugins: [],
-}
-```
-
-7. postcss.config.js (if you need to update this)
-```javascript
-export default {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
-}
+};
